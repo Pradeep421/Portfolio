@@ -1,0 +1,291 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+/* index page style  */
+/* header stylying  */
+header>nav
+{
+height: 15vh;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0 100px;
+}
+/* list inside the header  */
+nav>div ul
+{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    /* background-color: blue; */
+}
+nav img
+{
+height: 350px;
+width: 350px;
+}
+/* anchor tag style change inside header */
+nav a
+{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(37, 141, 211);
+}
+
+/*-------------------------------------------------------------Header on the main web page----------------------------------------------*/
+
+/* ---------------------------------------------------------------------main page ------------------------------------------------ */
+/* the main page -left side */
+main>div
+{
+display: flex;
+height: 75vh;
+}
+.main_cont
+{
+    width: 40%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+/* left side of the main page  */
+.main_cont>h4
+{
+    font-family: 'Anton', sans-serif;
+font-size: 2rem;
+}
+.main_cont>p
+{
+font-family: 'Bebas Neue', cursive;
+font-size: 1.25rem;
+
+}
+/*------------------------------------------------- right side of the main page ------------------------------------------------------- */
+.animation
+{
+    width: 60%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+/* inside right  */
+.box1
+{
+    height: 100px;
+    width: 100px;
+    animation: pradeep;
+    text-align: center;
+    animation-delay: 1s;
+    animation-duration: 10s;
+     position: absolute; 
+    animation-iteration-count: infinite;
+}
+.box2
+{
+    height: 100px;
+    width: 100px;
+    animation: pradeep1;
+    text-align: center;
+    animation-delay: 1s;
+    animation-duration: 10s;
+    position: absolute;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes pradeep
+{
+    0%
+    {
+        /* background-color: black; */
+        left: 0;
+        top: 0;
+    }
+   50%{
+    /* background-color:red; */
+        left: 900px;
+        top:350px;
+        
+    }
+
+    100%{
+    left:1000px;
+    top:375px
+   }    
+    
+}
+@keyframes pradeep1 
+{
+    0%
+    {
+        /* background-color: black; */
+        right: 0;
+        top: 0;
+    }
+   50%{
+    /* background-color:red; */
+        right: 900px;
+        top:350px;
+    }
+
+    100%
+    {
+    right:  1000px;
+    top: 375px;
+   }    
+    
+}
+
+/* Page two of the web page  */
+
+section
+{
+    
+    /* background-color: green; */
+    display: flex;
+    margin-top: 25px;
+    height: 75vh;
+}
+
+.container1,.container2
+{
+    
+    width: 50%;    
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.container1>div,.container2>div
+{
+    width: 30%;
+    height: 60%;
+    
+    background-color:rgb(37, 141, 211);
+    
+
+}
+
+.container2 
+{
+    justify-content: center;
+    align-items: end;
+
+    /* justify-content: end; */
+}
+
+
+/* footer of the web page  */
+
+
+
+footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+}
+
+footer>ul
+{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+footer>ul>li:hover
+{
+    rotate:Y 360deg;
+    transition:15s;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media qurey on the web page*/
+@media (max-width:900px){
+
+    body
+    {
+        min-width:500px;
+    }
+    .img
+    {
+        height: 200px;
+        width: 200px;
+    }
+    nav>div ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: aqua;
+}
+}
+
