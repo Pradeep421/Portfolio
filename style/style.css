@@ -71,9 +71,9 @@ font-size: 1.25rem;
 /*------------------------------------------------- right side of the main page ------------------------------------------------------- */
 .animation
 {
-    width: 60%;
-    display:flex;
+    width: 60%;    
     position: relative;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
